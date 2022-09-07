@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="contact-form">
+      <h2>Get in touch</h2>
+      <p>You can contact us via this form Monday - Thursday</p>
+      <label id="name-label"
+        >Your name
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="e.g. John"
+        />
+        <span>Please enter your name</span>
+      </label>
+
+      <label id="email-label"
+        >Your email
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="e.g. example@gmail.com"
+        />
+        <span>Please enter your Cph business email</span>
+      </label>
+
+      <label id="message-label"
+        >Your message
+
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          required
+          placeholder="Type in your message here"
+        ></textarea>
+        <span>Message must to be at least 8 characters long</span>
+      </label>
+      <div id="date-error">
+        The form is not active at the moment. Please get back to us on Monday.
+      </div>
+      <button type="submit">send</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
